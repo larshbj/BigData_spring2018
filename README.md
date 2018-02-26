@@ -10,3 +10,12 @@ pip3 install pyspark
 
 spark-submit task1.py
 ```
+
+### Jupyter notebook
+
+```bash
+pip install jupyter
+
+# To run
+jupyter-notebook
+```

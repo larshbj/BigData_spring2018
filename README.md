@@ -23,6 +23,13 @@ echo *.ipynb  filter=clean_ipynb > .git/info/attributes
     smudge = cat
 ```
 
+Set python3 for pyspark
+```bash
+# Add to ~/bash_profile
+export PYSPARK_PYTHON="/usr/local/bin/python3"
+```
+
+Install
 ```bash
 pip install jupyter
 

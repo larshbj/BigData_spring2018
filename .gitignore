@@ -1,4 +1,6 @@
 /data
+.gitconfig
+.gitattributes
 
 # Created by https://www.gitignore.io/api/jupyternotebook
 

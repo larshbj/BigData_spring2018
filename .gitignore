@@ -1,4 +1,6 @@
 /data
+derby.log
+/metastore_db
 
 # Created by https://www.gitignore.io/api/jupyternotebook
 

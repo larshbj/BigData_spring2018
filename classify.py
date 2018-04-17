@@ -19,8 +19,7 @@ def takeInputAndReturnList(input_path='data/input1.txt'):
     with open(input_path, 'r') as f:
         input_tweet = f.readlines()
         input_tweet_list = [i.rstrip().split(' ') for i in input_tweet]
-        print(input_tweet_list[0])
-    return input_tweet_list[0]
+    return list(map(str.lower, input_tweet_list[0]))
 
 def takeTrainingAndReturnList(input_path="data/geotweets.tsv"):
     rdd = sc.textFile(input_path)
@@ -102,7 +101,5 @@ if __name__ == "__main__":
     [training_path, input_path, output_path] = sys.argv[1:4]
     rdd_list = takeTrainingAndReturnList(training_path)
     input_tweet_list = takeInputAndReturnList(input_path)
-    total_tweet_count = getTotalTweetCount(rdd_list)
     places = estimatePlaces(rdd_list, input_tweet_list)
-    print(places)
     saveResultToFile(places, output_path)

@@ -1,7 +1,7 @@
 appdirs==1.4.3
 backports-abc==0.5
 backports.shutil-get-terminal-size==1.0.0
-bleach==2.1.2
+bleach==3.1.4
 carto==1.2.2
 cartoframes==0.5.6
 certifi==2018.1.18

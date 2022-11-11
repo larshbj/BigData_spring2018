@@ -39,7 +39,7 @@ ptyprocess==0.5.2
 py4j==0.10.4
 Pygments==2.2.0
 pyrestcli==0.6.4
-pyspark==2.2.1
+pyspark==3.2.2
 python-dateutil==2.6.1
 pytz==2018.3
 pyzmq==17.0.0
